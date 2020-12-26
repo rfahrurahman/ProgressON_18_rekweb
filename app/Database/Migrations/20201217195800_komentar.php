@@ -2,9 +2,8 @@
 
 namespace App\Database\Migrations;
 
-use CodeIgniter\Database\Migration;
 
-class Komentar extends Migration
+class Komentar extends \CodeIgniter\Database\Migration
 {
 
     public function up()

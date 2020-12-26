@@ -68,6 +68,7 @@ class Auth extends BaseController
                     $sessData = [
                         'username' => $user->usename,
                         'id' => $user->id,
+                        'role' => $user->role,
                         'isLoggedIn' => TRUE
                     ];
 

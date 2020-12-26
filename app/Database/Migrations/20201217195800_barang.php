@@ -2,9 +2,8 @@
 
 namespace App\Database\Migrations;
 
-use CodeIgniter\Database\Migration;
 
-class Barang extends Migration
+class Barang extends \CodeIgniter\Database\Migration
 {
 
     public function up()

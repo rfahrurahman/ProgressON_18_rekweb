@@ -2,9 +2,8 @@
 
 namespace App\Database\Migrations;
 
-use CodeIgniter\Database\Migration;
 
-class User extends Migration
+class User extends \CodeIgniter\Database\Migration
 {
 
     public function up()

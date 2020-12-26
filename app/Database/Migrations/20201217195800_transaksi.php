@@ -2,9 +2,8 @@
 
 namespace App\Database\Migrations;
 
-use CodeIgniter\Database\Migration;
 
-class Transaksi extends Migration
+class Transaksi extends \CodeIgniter\Database\Migration
 {
 
     public function up()
@@ -48,6 +47,16 @@ class Transaksi extends Migration
             'updated_date' => [
                 'type'           => 'DATETIME',
                 'null'           => true,
+            ],
+            'alamat' => [
+                'type' => 'TEXT'
+            ],
+            'ongkir' => [
+                'type' => 'INT'
+            ],
+            'status' => [
+                'type' => 'INT',
+                'constraint' => 1,
             ],
         ]);
         $this->forge->addKey('id', true);
