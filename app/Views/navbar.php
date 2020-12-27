@@ -24,6 +24,9 @@ $session = session();
                                 <li> <a class="dropdown-item" href="<?= site_url('barang/create'); ?>">Tambah Barang</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="<?= site_url('transaksi/index') ?>">Transaksi</a>
+                        </li>
                     <?php else : ?>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="<?= site_url('etalase/index') ?>">Etalase</a>
