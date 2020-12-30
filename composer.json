@@ -7,8 +7,12 @@
 	"require": {
 		"php": ">=7.2",
 		"codeigniter4/framework": "^4",
+<<<<<<< HEAD
 		"tecnickcom/tcpdf": "^6.3",
 		"fzaninotto/faker": "^1.9"
+=======
+		"tecnickcom/tcpdf": "^6.3"
+>>>>>>> 15468baa5d2e2e3c705c81bfa176061533cf35cd
 	},
 	"require-dev": {
 		"mikey179/vfsstream": "1.6.*",

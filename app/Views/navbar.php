@@ -27,9 +27,12 @@ $session = session();
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="<?= site_url('transaksi/index') ?>">Transaksi</a>
                         </li>
+<<<<<<< HEAD
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="<?= site_url('user/index') ?>">User</a>
                         </li>
+=======
+>>>>>>> 15468baa5d2e2e3c705c81bfa176061533cf35cd
                     <?php else : ?>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="<?= site_url('etalase/index') ?>">Etalase</a>
