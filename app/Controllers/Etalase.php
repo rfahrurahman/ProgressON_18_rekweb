@@ -32,6 +32,10 @@ class Etalase extends BaseController
         $id = $this->request->uri->getSegment(3);
         $modelBarang = new BarangModel();
 
+        $modelKomentar = new \App\Models\KomentarModel();
+
+        $komentar = $modelKomentar->where('id_barang', $id)->findAll();
+
         $model = $modelBarang->find($id);
 
         $provinsi = $this->rajaongkir('province');
@@ -48,8 +52,12 @@ class Etalase extends BaseController
                 $barangModel = new BarangModel();
                 $id_barang = $this->request->getPost('id_barang');
                 $jumlah_pembelian = $this->request->getPost('jumlah');
+
                 $barang = $barangModel->find($id_barang);
                 $entityBarang = new Barang();
+
+                $entityBarang->id = $id_barang;
+
                 $entityBarang->stok = $barang->stok - $jumlah_pembelian;
                 $barangModel->save($entityBarang);
 
@@ -70,6 +78,7 @@ class Etalase extends BaseController
 
         return view('etalase/beli', [
             'model' => $model,
+            'komentar' => $komentar,
             'provinsi' => json_decode($provinsi)->rajaongkir->results,
         ]);
     }
