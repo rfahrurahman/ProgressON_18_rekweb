@@ -27,12 +27,13 @@ $session = session();
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="<?= site_url('transaksi/index') ?>">Transaksi</a>
                         </li>
-<<<<<<< HEAD
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="<?= site_url('user/index') ?>">User</a>
                         </li>
-=======
->>>>>>> 15468baa5d2e2e3c705c81bfa176061533cf35cd
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="<?= site_url('user/index') ?>">User</a>
+                        </li>
+
                     <?php else : ?>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="<?= site_url('etalase/index') ?>">Etalase</a>
@@ -46,14 +47,15 @@ $session = session();
                         <li class="nav-item">
                             <a class="btn btn-success" href="<?= site_url('auth/logout') ?>">Logout</a>
                         </li>
-                    <?php else : ?>
-                        <li class="navbar-nav mr-auto">
-                            <!-- <li class="nav-item">
+                        <<<<<<< HEAD=======>>>>>>> 6ddeb84e5a2822e88b9ae52576938118d75f9151
+                        <?php else : ?>
+                            <li class="navbar-nav mr-auto">
+                                <!-- <li class="nav-item">
                             <a class="btn btn-success" href="<?= site_url('auth/login') ?>">Login</a>
                         </li> -->
-                        <li class="nav-item">
-                            <!-- <a class="btn btn-success" href="<?= site_url('auth/register') ?>">Register</a> -->
-                        </li>
+                            <li class="nav-item">
+                                <!-- <a class="btn btn-success" href="<?= site_url('auth/register') ?>">Register</a> -->
+                            </li>
 
                     </ul>
                 <?php endif ?>
