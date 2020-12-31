@@ -47,15 +47,14 @@ $session = session();
                         <li class="nav-item">
                             <a class="btn btn-success" href="<?= site_url('auth/logout') ?>">Logout</a>
                         </li>
-                        <<<<<<< HEAD=======>>>>>>> 6ddeb84e5a2822e88b9ae52576938118d75f9151
-                        <?php else : ?>
-                            <li class="navbar-nav mr-auto">
-                                <!-- <li class="nav-item">
+                    <?php else : ?>
+                        <li class="navbar-nav mr-auto">
+                            <!-- <li class="nav-item">
                             <a class="btn btn-success" href="<?= site_url('auth/login') ?>">Login</a>
                         </li> -->
-                            <li class="nav-item">
-                                <!-- <a class="btn btn-success" href="<?= site_url('auth/register') ?>">Register</a> -->
-                            </li>
+                        <li class="nav-item">
+                            <!-- <a class="btn btn-success" href="<?= site_url('auth/register') ?>">Register</a> -->
+                        </li>
 
                     </ul>
                 <?php endif ?>
