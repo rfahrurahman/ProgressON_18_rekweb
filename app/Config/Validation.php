@@ -162,4 +162,9 @@ class Validation
 		],
 
 	];
+	public $komentar = [
+		'komentar' => [
+			'rules' => 'required',
+		],
+	];
 }

@@ -13,6 +13,7 @@ $session = session();
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="<?= site_url('home/index') ?>">Home</a>
+
                     </li>
                     <?php if (session()->get('role') == 0) : ?>
                         <li class="nav-item dropdown">
@@ -23,6 +24,12 @@ $session = session();
                                 <li><a class="dropdown-item" href="<?= site_url('barang/index'); ?>">List Barang</a></li>
                                 <li> <a class="dropdown-item" href="<?= site_url('barang/create'); ?>">Tambah Barang</a></li>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="<?= site_url('transaksi/index') ?>">Transaksi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="<?= site_url('user/index') ?>">User</a>
                         </li>
                     <?php else : ?>
                         <li class="nav-item">
@@ -37,13 +44,14 @@ $session = session();
                         <li class="nav-item">
                             <a class="btn btn-success" href="<?= site_url('auth/logout') ?>">Logout</a>
                         </li>
+
                     <?php else : ?>
                         <li class="navbar-nav mr-auto">
                             <!-- <li class="nav-item">
                             <a class="btn btn-success" href="<?= site_url('auth/login') ?>">Login</a>
                         </li> -->
                         <li class="nav-item">
-                            <a class="btn btn-success" href="<?= site_url('auth/register') ?>">Register</a>
+                            <!-- <a class="btn btn-success" href="<?= site_url('auth/register') ?>">Register</a> -->
                         </li>
 
                     </ul>
