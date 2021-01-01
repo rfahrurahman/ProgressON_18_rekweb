@@ -32,7 +32,7 @@ $session = session();
                             <a class="nav-link active" aria-current="page" href="<?= site_url('home/index') ?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="<?= site_url('etalase/index') ?>">Etalase</a>
+                            <a class="nav-link" aria-current="page" href="<?= site_url('etalase/index') ?>">Product</a>
                         </li>
                     <?php endif; ?>
                 </ul>

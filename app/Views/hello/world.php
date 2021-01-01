@@ -50,7 +50,9 @@ $urlB = $a['url'];
     <div class="container">
         <div class="row pt-4 mb-4">
             <div class="col text-center">
+                <hr>
                 <h2>Restaurant</h2>
+                <hr>
             </div>
         </div>
 
