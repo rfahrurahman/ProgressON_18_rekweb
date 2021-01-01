@@ -45,8 +45,8 @@ $urlB = $a['url'];
 <?= $this->extend('layout'); ?>
 <?= $this->section('content'); ?>
 
-<!-- Portfolio -->
-<section class="portfolio " id="portfolio">
+<!-- Restaurant -->
+<section class="restaurant" id="restaurant">
     <div class="container">
         <div class="row pt-4 mb-4">
             <div class="col text-center">
@@ -119,10 +119,9 @@ $urlB = $a['url'];
                     </div>
                 </div>
             </div>
-
-
         </div>
-
     </div>
 </section>
+<!--End Restaurant-->
+
 <?= $this->Endsection(); ?>
