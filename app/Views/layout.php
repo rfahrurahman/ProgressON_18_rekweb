@@ -13,7 +13,7 @@
     <title>Progress ON</title>
 </head>
 
-<body>
+<body style="background-image: url(../../public/img/bg_login.jpg);">
 
     <?= $this->include('navbar'); ?>
 

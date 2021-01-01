@@ -73,8 +73,11 @@ class Auth extends BaseController
                     ];
 
                     $this->session->set($sessData);
-
-                    return redirect()->to(site_url('transaksi/index'));
+                    if (session()->get('role') == 0) {
+                        return redirect()->to(site_url('transaksi/index'));
+                    } else {
+                        return redirect()->to(site_url('home/index'));
+                    }
                 }
             } else {
                 $this->session->setFlashdata('errors', ['User Tidak Ditemukan']);
