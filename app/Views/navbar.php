@@ -11,9 +11,6 @@ $session = session();
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <?php if ($session->get('isLoggedIn')) : ?>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?= site_url('home/index') ?>">Home</a>
-                    </li>
                     <?php if (session()->get('role') == 0) : ?>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -31,6 +28,9 @@ $session = session();
                             <a class="nav-link" aria-current="page" href="<?= site_url('user/index') ?>">User</a>
                         </li>
                     <?php else : ?>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="<?= site_url('home/index') ?>">Home</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="<?= site_url('etalase/index') ?>">Etalase</a>
                         </li>
