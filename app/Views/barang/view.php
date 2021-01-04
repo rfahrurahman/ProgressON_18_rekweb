@@ -1,6 +1,6 @@
 <?= $this->extend('layout'); ?>
 <?= $this->section('content'); ?>
-<h1>View Barang</h1>
+<h2 class="mt-3">View Product</h2>
 <div class="container">
     <div class="row">
         <div class="col-6">
@@ -11,8 +11,8 @@
             </div>
         </div>
         <div class="col-6">
-            <h1 class="text-success"><?= $barang->nama; ?></h1>
-            <h4>Harga : <?= $barang->harga; ?></h4>
+            <h3 class="text-success"><?= $barang->nama; ?></h3>
+            <h4>Harga : <?= "Rp. " . number_format($barang->harga, 2, ',', '.'); ?></h4>
             <h4>Stok : <?= $barang->stok; ?></h4>
         </div>
     </div>

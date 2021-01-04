@@ -1,4 +1,5 @@
 <?php
+
 namespace Config;
 
 use CodeIgniter\Config\BaseConfig;
@@ -54,14 +55,14 @@ class Email extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $SMTPUser ='krisspriyargi@gmail.com';
+	public $SMTPUser = 'rizkifahru02@gmail.com';
 
 	/**
 	 * SMTP Password
 	 *
 	 * @var string
 	 */
-	public $SMTPPass ='pranata24';
+	public $SMTPPass = 'Parakan1';
 
 	/**
 	 * SMTP Port
@@ -167,5 +168,4 @@ class Email extends BaseConfig
 	 * @var boolean
 	 */
 	public $DSN = false;
-
 }

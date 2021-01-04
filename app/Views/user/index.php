@@ -1,6 +1,6 @@
 <?= $this->extend('layout'); ?>
 <?= $this->section('content'); ?>
-<h1>Barang</h1>
+<h2 class="mt-3">Daftar User</h2>
 <table class="table">
     <thead>
         <th>Id</th>

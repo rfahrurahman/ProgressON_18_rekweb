@@ -1,7 +1,7 @@
 <?= $this->extend('layout'); ?>
 <?= $this->section('content'); ?>
 
-<h4>Transaksi No <?= $transaksi->id ?></h4>
+<h4 class="mt-3">Bukti Transaksi</h4>
 <table class="table">
     <tr>
         <td>Barang</td>

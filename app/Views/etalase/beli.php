@@ -57,7 +57,7 @@ $submit = [
                 <div class="card-body">
                     <img src="<?= base_url('uploads/' . $model->gambar); ?>" class="img-fluid img-thumbnail" style="max-height: 200px;">
                     <h1 class="mt-3 text-success"><?= $model->nama; ?></h1>
-                    <h4>Harga : <?= "Rp " . number_format($model->harga, 2, ',', '.'); ?></h4>
+                    <h4>Harga : <?= "Rp. " . number_format($model->harga, 2, ',', '.'); ?></h4>
                     <h4>Stok : <?= $model->stok; ?></h4>
                 </div>
             </div>
